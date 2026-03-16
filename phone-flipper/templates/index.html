@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title>スマホ転売ツール</title>
+</head>
+
+<body>
+
+<h1>利益ランキング</h1>
+
+{% for i in items %}
+
+<div style="border:1px solid #ccc;margin:10px;padding:10px">
+
+<h3>{{i.title}}</h3>
+
+利益: {{i.profit}} 円
+
+<br><br>
+
+<a href="{{i.url}}" target="_blank">
+Yahooオークションを見る
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>
